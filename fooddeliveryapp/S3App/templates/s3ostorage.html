@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block head %} {% endblock %} {% block body %}
+Amazon S3App Demo
+Amazon S3 Demo: Upload and download files to and from your S3 bucket
+
+Upload a file to an S3 bucket:
+No file chosen 
+The following are the files stored in the S3 bucket:
+Click on the filename to download it.
+
+{% for item in contents %}
+{{ item.Key }}
+{% endfor %}
+{% endblock %}
